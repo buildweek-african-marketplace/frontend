@@ -23,7 +23,6 @@ const FormikLoginForm = withFormik({
   
     handleSubmit(values) {
       console.log(values);
-      //THIS IS WHERE YOU DO YOUR FORM SUBMISSION CODE... HTTP REQUESTS, ETC.
     }
   })(LoginForm);
   
