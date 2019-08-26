@@ -24,7 +24,7 @@ export default function MarketList() {
   
     return (
       <div className="market-list-wrapper">
-      <section >
+      <section className="market-list grid-view">
         
           {market.map (markets => (
   
