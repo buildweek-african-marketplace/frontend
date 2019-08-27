@@ -1,11 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
+import "../index.css"
+import MarketCard from "./MarketCard";
 
-const MarketList = () => {
-    return (
-        <div>
+
+export default function MarketList() {
+    
+      const [market, setMarket] = useState([]);
+      useEffect(() => {
+   
+          axios
+          .get("https://swapi.co/api/people/")
+          .then(response => {
+            console.log(response);
+            setMarket(response.data.results);
             
-        </div>
-    )
-}
-
-export default MarketList
+          })
+          .catch(error => {
+            console.log("Server Error", error);
+          })
+        }, []);
+      
+  
+    return (
+      <div className="market-list-wrapper">
+      <section className="market-list grid-view">
+        
+          {market.map (markets => (
+  
+         <MarketCard market={markets} />
+         
+          ))}
+         
+        
+      
+      </section>
+      </div>
+    );
+  }
+  
