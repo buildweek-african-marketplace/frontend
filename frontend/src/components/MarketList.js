@@ -10,17 +10,16 @@ export default function MarketList() {
       useEffect(() => {
    
           axios
-          .get("https://swapi.co/api/people/")
+          .get("https://african-market.herokuapp.com/items")
           .then(response => {
             console.log(response);
-            setMarket(response.data.results);
-            
+            setMarket(response.data);
           })
           .catch(error => {
             console.log("Server Error", error);
           })
         }, []);
-      
+        console.log(market);
   
     return (
       <div className="market-list-wrapper">
