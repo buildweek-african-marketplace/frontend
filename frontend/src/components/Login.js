@@ -1,5 +1,5 @@
 import React from 'react'
-import { withFormik, Form, Feild } from "formik";
+import { withFormik, Form, Field } from "formik";
 import { Link, Route } from "react-router-dom";
 import TabNav from "./TabNav";
 
@@ -31,7 +31,5 @@ const FormikLoginForm = withFormik({
         console.log(values);
     }
 })(LoginForm);
-
-export default FormikLoginForm;
 
 export default LoginForm

@@ -1,29 +1,45 @@
 import React from 'react'
-import { Route, Link } from "react-router-dom";
-import App from "../App";
-import Login from "./Login";
+import { Tab, Menu, Icon } from "semantic-ui-react";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import MarketList from "./MarketList";
 import SaleForm from "./SaleForm";
+import Login from "./Login";
+import HomePage from "./HomePage";
 
 
 
-const TabNav = () => {
+
+
+export default function TabNav() {
     return (
-        <div>
-            <Link to="/" >Home</Link>
-            <Link to="/login">Sign In</Link>
-            <Link to="/market">Market Pricing</Link>
-            <Link to="/post">Post Products</Link>
         
-            <Link to="/contact">Contact Us</Link>
-            <Link to="/team">Meet Our Team</Link>
-            
-            <Route exact path="/" component={TabNav}/>
-            <Route path="/login" component={Login}/>
-            <Route path="/market" component={MarketList}/>
-            <Route path="/post" component={SaleForm} />
-        </div>
-    )
-}
-
-export default TabNav
+      <header>
+        <h1 className="tabNav-h1">Sauti</h1>
+       
+            <div className="App">
+            <ul className="navbar">
+                <li className=".navbar li a">
+        <NavLink exact to ="/"> Home Page
+              </NavLink>
+            </li>
+            <li>
+            <NavLink exact to ="/market"> Market Pricing
+              </NavLink>
+              </li>
+              <li>
+              <NavLink exact to ="/post"> Sell
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to ="/login"> Login
+              </NavLink>
+            </li>
+            </ul>
+            <Route exact path="/" render={ (props)=> <HomePage {...props} /> } />
+            <Route exact path="/login" component={Login}/>
+            <Route exact path="/market" component={MarketList}/>
+            <Route exact path="/post" component={SaleForm} />
+         </div>
+         </header>
+    )}
+    

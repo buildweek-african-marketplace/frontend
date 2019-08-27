@@ -1,12 +1,18 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import {Route} from "react-router-dom";
+import TabNav from "./components/TabNav.js";
+import HomePage from "./components/HomePage";
+import Login from "./components/Login";
+import MarketList from "./components/MarketList";
+import SaleForm from "./components/SaleForm";
+//import HomePage from "./components/Homepage.js";
 
-function App() {
+
+
+export default function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <TabNav />
     </div>
   );
 }
-
-export default App;

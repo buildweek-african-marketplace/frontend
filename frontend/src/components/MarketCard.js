@@ -1,11 +1,8 @@
 import React from 'react'
 
-const MarketCard = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default MarketCard
+export default function MarketCard(props) {
+    return <span div className="market-card">
+        
+        <p>{props.market.name}</p>
+    </span>;
+  }
