@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import HomePage from "./HomePage"
 
 
 
@@ -35,9 +37,11 @@ const handleSubmit = event => {
             onChange={event => handleChange(event)}
           />
         </label>
-        <button>Submit!</button>
       </form>
+      <NavLink exact to ="/welcome"> <button>Login!</button></NavLink>
+      <Route exact path="/welcome" component={HomePage} />
        </div>
+    
     )
 }
 
