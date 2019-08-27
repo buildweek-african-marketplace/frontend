@@ -34,4 +34,4 @@ const FormikLoginForm = withFormik({
 
 export default FormikLoginForm;
 
-export default Login
+export default LoginFor
