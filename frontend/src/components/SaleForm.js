@@ -21,7 +21,19 @@ const SaleForm = () => {
 }
 
 const PostForm = withFormik({
-    
-})
+    mapPropsToValues({ category, item, location, price, curency, description }) {
+        return {
+            category: 
+            item: 
+            location: 
+            price: price || "",
+            description: description || ""
+        };
+    },
+    handleSubmit(values) {
+        console.log(values);
+    }
+})(SaleForm)
 
 export default SaleForm
+ export default PostForm
