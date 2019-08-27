@@ -5,20 +5,21 @@ import HomePage from "./HomePage"
 
 
 const Login = () => {
-    const [user, setUser] = useState({ username: "", password: "" });
+  const [user, setUser] = useState({ username: "", password: "" });
 
-const handleChange = event => {
-  setUser({ ...user, [event.target.name]: event.target.value });
-};
+  const handleChange = event => {
+    setUser({ ...user, [event.target.name]: event.target.value });
+  };
 
-const handleSubmit = event => {
-  event.preventDefault();
-  console.log(user.name);
-  console.log(user.password);
-};
-    return (
-       <div>
- <form onSubmit={event => handleSubmit(event)}>
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log(user.name);
+    console.log(user.password);
+  };
+  return (
+    <div classname="login">
+      <h1>Welcome Back!</h1>
+      <form onSubmit={event => handleSubmit(event)}>
         <label>
           Username:
           <input
@@ -38,9 +39,10 @@ const handleSubmit = event => {
           />
         </label>
       </form>
-      <NavLink exact to ="/welcome"> <button>Login!</button></NavLink>
+      <NavLink exact to="/welcome"> <button>Sign In</button></NavLink>
       <Route exact path="/welcome" component={HomePage} />
-       </div>
+    </div>
+  
     
     )
 }
