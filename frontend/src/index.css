@@ -110,3 +110,61 @@ code {
   display: inline;
   margin-top: -398px;
 }
+
+
+.card-login {	
+  height: 450px;	
+  width: 30rem;	
+  border-radius: 18px;	
+  background-color: #FFF5E6;
+  margin-left: 10rem;
+
+}
+
+  .login-h1 {	
+    height: 62px;	
+    width: 312px;	
+    color: #303030;	
+    margin: 10px;
+    padding-top: 30px;
+    padding-left: 60px;
+    font-family: Roboto;
+      font-size: 44px;	
+      font-weight: bold;	
+      line-height: 52px;
+      }  
+
+  .login-p {	
+        height: 24px;	
+       
+        color: #1F5DA5;	
+        font-family: Nunito;	
+        font-size: 18px;	
+        line-height: 24px;
+      }
+
+  .login-h2 {
+      height: 29px;	
+      width: 30px;	
+      color: #2E2F38;	
+      font-family: Roboto;
+      margin: 15px 3px;
+      font-size: 24px;	
+      line-height: 28px;
+    }
+
+  .login-button {	
+        height: 60px;	
+        width: 310px;
+        background-color: red;
+        color: white;
+      }
+    
+  .login-box {
+    height: 50px;	
+    width: 374px;	
+    border: 1px solid
+     #303030;	
+     border-radius: 4px;	background-color: #FFFFFF;
+    }
+  

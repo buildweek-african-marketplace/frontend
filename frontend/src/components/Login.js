@@ -17,21 +17,21 @@ const Login = () => {
     console.log(user.password);
   };
   return (
-    <div classname="login">
-      <h1>Welcome Back!</h1>
+    <div className="card-login">
+      <h1 className="login-h1">Welcome Back!</h1>
       <form onSubmit={event => handleSubmit(event)}>
-        <label>
+        <label className='login-h2'>
           Username:
-          <input
+          <input className='login-box'
             type="text"
             name="username"
             value={user.username}
             onChange={event => handleChange(event)}
           />
         </label>
-        <label>
+        <label className="login-h2">
           Password:
-          <input
+          <input className='login-box'
             type="text"
             name="password"
             value={user.password}
@@ -39,12 +39,13 @@ const Login = () => {
           />
         </label>
       </form>
-      <NavLink exact to="/welcome"> <button>Sign In</button></NavLink>
+      <p className='login-p'>Forgot your password?</p>
+      <NavLink exact to="/welcome"> <button className="login-button">Sign In</button></NavLink>
       <Route exact path="/welcome" component={HomePage} />
     </div>
-  
-    
-    )
+
+
+  )
 }
 
 export default Login
