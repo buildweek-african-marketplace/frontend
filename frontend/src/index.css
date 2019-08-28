@@ -118,6 +118,7 @@ code {
   border-radius: 18px;	
   background-color: #FFF5E6;
   margin-left: 10rem;
+  margin-right: 1px;
 
 }
 
@@ -156,8 +157,9 @@ code {
   .login-button {	
         height: 60px;	
         width: 310px;
-        background-color: red;
+        background-color: #FE4F43;
         color: white;
+        font-size: 28px;
       }
     
   .login-box {
@@ -168,3 +170,28 @@ code {
      border-radius: 4px;	background-color: #FFFFFF;
     }
   
+  .login-hello {
+    height: 450px;	
+    width: 436px;	
+    border-radius: 0 18px 18px 0;	background-color: #FDB751;
+    margin-left: 30rem;
+    padding-top: 40px;
+  }
+.hello {
+  height: 66px;	
+  width: 312px;	
+  color: #303030;	
+  font-family: Roboto;	
+  font-size: 28px;	
+  line-height: NaNpx;
+  margin: 20px 60px;
+  padding: 20px;
+}
+.hello-button {
+  height: 59.85px;	
+  width: 309.43px;	
+  border: 1px solid #303030;
+  border-radius: 4px;	
+  background-color: #FFF5E6;
+  font-size: 28px;
+}
