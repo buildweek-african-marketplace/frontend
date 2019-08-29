@@ -10,7 +10,7 @@ export default function MarketList() {
       useEffect(() => {
    
           axios
-          .get("https://african-market.herokuapp.com/items")
+          .get("https://lbs-african-marketplace.herokuapp.com/items")
           .then(response => {
             console.log(response);
             setMarket(response.data);
