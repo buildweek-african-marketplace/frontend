@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import { withFormik, Form, Field } from "formik";
-import { render } from 'react-dom';
-import Yup from 'yup';
+
 
 const SaleForm = () => {
     const [item, setItem] = useState({

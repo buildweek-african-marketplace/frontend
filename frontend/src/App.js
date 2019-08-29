@@ -1,11 +1,7 @@
 import React from "react";
 import {Route} from "react-router-dom";
 import TabNav from "./components/TabNav.js";
-import HomePage from "./components/HomePage";
-import Login from "./components/Login";
-import MarketList from "./components/MarketList";
-import SaleForm from "./components/SaleForm";
-//import HomePage from "./components/Homepage.js";
+import styles from './index.css'
 
 
 
@@ -13,6 +9,17 @@ export default function App() {
   return (
     <div>
       <TabNav />
+      <section className="hope-page">
+        <header>
+        <h1 className="tabNav-h1">Sauti</h1>
+        <p className = "homepage-p">Empowering cross-border traders through knowledge, information and community. </p>
+        <button className ="button">"Let's Get Started!</button>
+        <img className = "home-img" src= "https://cdn.pixabay.com/photo/2016/02/24/05/20/art-1219122_640.jpg"
+          alt="Sauti Africa"
+        />
+        </header>
+      </section>
     </div>
+    
   );
 }
