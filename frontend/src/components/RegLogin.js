@@ -4,11 +4,11 @@ import axios from "axios";
 
 
 const Login = (props) => {
-    const [login, setLogin] = useState({ username:"", password: "" })
+    const [login, setLogin] = useState({ username:props.registration.username, password: props.registration.password })
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const changeHandler = (e) => {
-        setLogin({username: props.registration.username, password: props.registration.password });
+        setLogin({ ...login, [e.target.name]:e.target.value });
     }
 
 const userLogin = (user) => {
