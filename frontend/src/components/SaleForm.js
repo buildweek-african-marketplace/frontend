@@ -76,7 +76,7 @@ const SaleForm = () => {
 export default SaleForm
 
 
-/* 
+/*
 const withFormik = Formik({
   mapPropsToValues: () => ({ color: '' }),
   validationSchema: Yup.object().shape({
