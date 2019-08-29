@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
+import { Redirect } from "react-router-dom";
 import axios from "axios";
 
 
-const Login = () => {
+const Login = (props) => {
     const [login, setLogin] = useState({ username:"", password: "" })
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [token, setToken] = useState('');
 
     const changeHandler = (e) => {
-        setLogin({ ...login, [e.target.name]:e.target.value});
+        setLogin({username: props.registration.username, password: props.registration.password });
     }
 
 const userLogin = (user) => {
@@ -30,7 +30,19 @@ const submitLogin = (e) => {
         password:login.password
     }
     userLogin(loggingUser);
+    setIsLoggedIn(false);
 }
+
+    if(isLoggedIn === true){
+        return(
+            <Redirect to={
+                {
+                    pathname:"/market",
+                    from: props.location
+                }
+            } />
+        )
+    }else{
     return(
         <div>
             <form onSubmit={submitLogin}>
@@ -54,6 +66,7 @@ const submitLogin = (e) => {
             </form>    
         </div>    
      )
+ }
 }
 
 export default Login;
