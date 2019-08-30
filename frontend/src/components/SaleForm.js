@@ -29,5 +29,5 @@ const SaleForm = () => {
         console.log(values);
     }
  })(SaleForm)
- export default SaleForm
+ export default PostForm;
 

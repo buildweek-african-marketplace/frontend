@@ -4,6 +4,9 @@ import {Route} from "react-router-dom";
 import TabNav from "./components/TabNav.js";
 import Registration from "./components/Registration";
 import RegLogin from "./components/RegLogin";
+import HomePage from "./components/HomePage";
+import MarketList from "./components/MarketList";
+import SaleForm from "./components/SaleForm";
 
 
 
@@ -43,12 +46,16 @@ const submitRegistration = (e) => {
   return (
     <div>
       <TabNav />
+      <Route exact path="/" render={ (props)=> <HomePage {...props} /> } />
       <Route exact path="/register" render={(props)=><Registration {...props}
       registration={registration} isRegistered={isRegistered}
       changeHandler={changeHandler} submitRegistration={submitRegistration} />} />
 
       <Route exact path="/reglog" render={(props)=><RegLogin {...props} 
       registration={registration} />} />
+
+      <Route exact path="/market" component={MarketList}/>
+      <Route exact path="/post" component={SaleForm} />
     </div>
   );
 }

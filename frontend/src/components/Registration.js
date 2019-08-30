@@ -2,6 +2,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 
 const Registration = (props) => {
+    console.log(props)
 
 if(props.isRegistered === true){
     return(
