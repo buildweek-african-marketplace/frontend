@@ -5,12 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgb(51, 50, 50) 
+  background-color:rgb(51, 50, 50);
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    text-decoration: none; 
 }
 
 .market-list-wrapper {
@@ -55,23 +57,24 @@ code {
 .navbar > li > a.activeNavButton {
   background-color: #4285f4;
   color: white;
+  text-decoration: none;
 }
 
 .homepage-h1 {
   color: #FDB751; 
   font-size: 78px; 
   font-family: Merriweather; 
-  margin-right: 929px;  
+  margin-right: 79px;  
 }
 
 .homepage-p {
-  height: 120px;	
-  width: 407px;	
+ width: 443px; 
  color: white; 
   font-family: Roboto;	
   font-size: 30px;	
   line-height: 35px;
-  margin-left:18px; 
+  margin-left:31%;
+  display:block; 
 }
 
 .tabNav-h1 {
@@ -92,21 +95,87 @@ code {
 }
 
 .button {
+  text-decoration: none;
   height: 54px;	
-  width: 222px;	
+  width: 30%;	
   border: 1px solid #303030;	
   border-radius: 2px;	
   background-color: #FDB751;
-	display: flex; 
+	display: table-cell; 
   color: #303030;	
   font-family: Roboto;	
   font-size: 26px;	
   line-height: 30px;
   margin-left:86px; 
+  margin:30px; 
+  
 }
 
 .home-img {
   margin-left: 205px;
   display: inline;
-  margin-top: -398px;
+
 }
+
+.login { 
+background:#eceeee;
+border: 1px solid #42464b;
+border-radius: 6px; 
+height: 400px;
+margin:20px auto 0;
+width: 650px;
+display:inline-grid; 
+align-content:center;
+}
+
+.box {
+  border:1px solid #a1a3a3; 
+  border-radius: 4px; 
+  box-shadow:0 1px #fff;
+  box-sizing: border-box; 
+  color: #696969;
+  height: 39px; 
+  margin: 31px 0 0 29px; 
+  padding-left:37px; 
+  transition: box-shadow 0.3s; 
+  width: 240px; 
+  margin-left: 30%; 
+}
+
+.submit { 
+  background: #FDB751; 
+  height: 36px; 
+  margin: 30px auto;  
+  width: 250px; 
+  margin-left: -3%;
+}
+
+.welcome-img {
+  height: 200px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 50%;
+  border: 1px solid rgb(209, 209, 209);
+  position: relative;
+  top: -60px;
+  margin-bottom: -60px;
+  margin: 6% 3% 0 0;
+    display: table-column; 
+}
+
+.welcome-button { 
+  
+    text-decoration: none;
+    height: 182px;	
+    width: 25%;	
+    border: 10px solid white;	
+    border-radius: 2px;	
+    background-color: #FDB751;
+    display: table-cell; 
+    color: #303030;	
+    font-family: Roboto;	
+    font-size: 26px;	
+    line-height: 30px;
+    margin-left:35%; 
+    margin-bottom: 5%;  
+    display: inline-grid; 
+  }

@@ -1,12 +1,9 @@
 import React from 'react'
 import { Tab, Menu, Icon } from "semantic-ui-react";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
-import MarketList from "./MarketList";
-import SaleForm from "./SaleForm";
+import Register from "./Register";
 import Login from "./Login";
 import HomePage from "./HomePage";
-
-
 
 
 
@@ -19,29 +16,23 @@ export default function TabNav() {
             <div className="App">
             <ul className="navbar">
                 <li className=".navbar li a">
-        <NavLink exact to ="/"> Home Page
+        <NavLink exact to ="/"> Home
               </NavLink>
             </li>
-            <li>
-            <NavLink exact to ="/MarketList"> Market Pricing
-              </NavLink>
-              </li>
+           
               <li>
-              <NavLink exact to ="/SaleForm"> Sell
+              <NavLink exact to ="/register"> Register
               </NavLink>
             </li>
             <li>
-              <NavLink exact to ="/Login"> Login
+              <NavLink exact to ="/login"> Login
               </NavLink>
             </li>
             </ul>
-            <Route exact path="/" component={HomePage}/>
-            
-            <Route exact path="/MarketList" component={MarketList}/>
-
-            <Route exact path="/SaleForm" component={SaleForm}/>
-            <Route exact path="/Login" component={Login}/>
-
+            <Route exact path="/" render={ (props)=> <HomePage {...props} /> } />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/login" component={Login}/>
+          
          </div>
          </header>
     )}
