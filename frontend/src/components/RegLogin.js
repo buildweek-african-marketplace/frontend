@@ -45,23 +45,23 @@ const submitLogin = (e) => {
     }else{
     return(
         <div>
-            <form onSubmit={submitLogin}>
+            <form className="login" onSubmit={submitLogin}>
                 <label>
                     Username
                     <br/>
-                    <input type="text" name="username" value={login.username} onChange={changeHandler} />
+                    <input className="box" type="text" name="username" value={login.username} onChange={changeHandler} />
                 </label>
                 <br/>  
                 <label>
                     Password
                     <br/>
-                    <input type="password" name="password" value={login.password} onChange={changeHandler} />
+                    <input className="box" type="password" name="password" value={login.password} onChange={changeHandler} />
                 </label>
                 <br/>
                 <label>
                     Submit
                     <br/>
-                    <input type="submit" />
+                    <input className="submit" type="submit" />
                 </label>    
             </form>    
         </div>    

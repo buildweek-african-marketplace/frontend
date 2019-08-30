@@ -31,12 +31,12 @@ export default function TabNav() {
               </NavLink>
             </li>
             <li>
-              <NavLink exact to ="/login"> Login
+              <NavLink exact to ="/reglog"> Login
               </NavLink>
             </li>
             </ul>
             <Route exact path="/" render={ (props)=> <HomePage {...props} /> } />
-            <Route exact path="/login" component={Login}/>
+            <Route exact path="/reglog" component={Login}/>
             <Route exact path="/market" component={MarketList}/>
             <Route exact path="/post" component={SaleForm} />
          </div>
