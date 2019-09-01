@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
-import MarketList from "./MarketList";
-import SaleForm from "./SaleForm";
+
 
 
 export default function WelcomePage() {
@@ -9,18 +8,18 @@ export default function WelcomePage() {
     <section>
       <header>
         <h1 className="homepage-h1">Sauti Africa</h1>
-        <Link to="/MarketList">
-<button className ="welcome-button">Market Pricing</button></Link>
-<Route path="/MarketList" component={MarketList} />
+        <Link to="/marketprice">
+<button className ="welcome-button">MARKET PRICING</button></Link>
+
         
-        />
-        <Link to="/MarketList">
-        <button className ="welcome-button">Browse Items</button></Link>
-        <Route path="/MarketList" component={MarketList} />
         
-        <Link to="/SaleForm">
-  <button className ="welcome-button">Post Items for Sale</button></Link>
-  <Route path="/SaleForm" component={SaleForm} />
+        <Link to="/market">
+        <button className ="welcome-button">BROWSE</button></Link>
+        
+        
+        <Link to="/post">
+  <button className ="welcome-button">POST</button></Link>
+
        
       </header>
     </section>

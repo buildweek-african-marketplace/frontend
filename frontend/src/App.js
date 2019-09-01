@@ -7,7 +7,8 @@ import RegLogin from "./components/RegLogin";
 import HomePage from "./components/HomePage";
 import MarketList from "./components/MarketList";
 import SaleForm from "./components/SaleForm";
-
+import WelcomePage from "./components/WelcomePage";
+import MarketPrice from "./components/MarketPrice";
 
 
 export default function App() {
@@ -56,6 +57,8 @@ const submitRegistration = (e) => {
 
       <Route exact path="/market" component={MarketList}/>
       <Route exact path="/post" component={SaleForm} />
+      <Route exact path="/welcome" component={WelcomePage} />
+      <Route exact path="/marketprice" component={MarketPrice} />
     </div>
   );
 }

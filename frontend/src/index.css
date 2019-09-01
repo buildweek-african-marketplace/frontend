@@ -64,16 +64,16 @@ code {
   color: #FDB751; 
   font-size: 78px; 
   font-family: Merriweather; 
-  margin-right: 79px;  
+  margin-left: 31%;  
 }
 
 .homepage-p {
- width: 443px; 
+ width: 38%; 
  color: white; 
   font-family: Roboto;	
   font-size: 30px;	
   line-height: 35px;
-  margin-left:31%;
+  margin-left:29%;
   display:block; 
 }
 
@@ -100,15 +100,14 @@ code {
   width: 30%;	
   border: 1px solid #303030;	
   border-radius: 2px;	
-  background-color: #FDB751;
-	display: table-cell; 
+  background-color: #FDB751; 
   color: #303030;	
   font-family: Roboto;	
   font-size: 26px;	
   line-height: 30px;
-  margin-left:86px; 
-  margin:30px; 
-  
+  margin-left:13%; 
+  margin-top:3%; 
+  margin-right: -4%;  
 }
 
 .home-img {
@@ -121,10 +120,9 @@ code {
 background:#eceeee;
 border: 1px solid #42464b;
 border-radius: 6px; 
-height: 400px;
+height: 413px;
 margin:20px auto 0;
-width: 650px;
-display:inline-grid; 
+width: 650px; 
 align-content:center;
 }
 
@@ -134,12 +132,13 @@ align-content:center;
   box-shadow:0 1px #fff;
   box-sizing: border-box; 
   color: #696969;
-  height: 39px; 
-  margin: 31px 0 0 29px; 
+  height: 39px;  
   padding-left:37px; 
   transition: box-shadow 0.3s; 
   width: 240px; 
   margin-left: 30%; 
+  margin-bottom: 4%; 
+  margin-top: 2%; 
 }
 
 .submit { 
@@ -147,7 +146,7 @@ align-content:center;
   height: 36px; 
   margin: 30px auto;  
   width: 250px; 
-  margin-left: -3%;
+  margin-left: 29%;
 }
 
 .welcome-img {
@@ -159,7 +158,7 @@ align-content:center;
   top: -60px;
   margin-bottom: -60px;
   margin: 6% 3% 0 0;
-    display: table-column; 
+  display: table-column; 
 }
 
 .welcome-button { 
@@ -167,15 +166,138 @@ align-content:center;
     text-decoration: none;
     height: 182px;	
     width: 25%;	
-    border: 10px solid white;	
+    border: 4px solid white;	
     border-radius: 2px;	
-    background-color: #FDB751;
-    display: table-cell; 
+    background-color: #FDB751; 
     color: #303030;	
     font-family: Roboto;	
-    font-size: 26px;	
+    font-size: 32px;	
     line-height: 30px;
     margin-left:35%; 
     margin-bottom: 5%;  
-    display: inline-grid; 
+    
   }
+
+  .reglabel {
+    margin-left: 30%;
+  }
+
+  .selllogin{  
+      background:#eceeee;
+      border: 1px solid #42464b;
+      border-radius: 6px; 
+      height: 685px;
+      margin:20px auto 0;
+      width: 650px; 
+      align-content:center;
+  
+  }
+  
+  .descrbox { 
+      border:1px solid #a1a3a3; 
+      border-radius: 4px; 
+      box-shadow:0 1px #fff;
+      box-sizing: border-box; 
+      color: #696969;
+      height: 100px;  
+      padding-left:37px; 
+      transition: box-shadow 0.3s; 
+      width: 240px; 
+      margin-left: 30%; 
+      margin-bottom: 4%; 
+      margin-top: 2%; 
+  }
+
+
+  .signlabel { 
+      color: #FDB751; 
+      font-size: 43px; 
+      font-family: Merriweather; 
+      margin-left: 28%;  
+   
+  }
+
+  .signlogin { 
+    background:#eceeee;
+    border: 1px solid #42464b;
+    border-radius: 6px; 
+    height: 350px;
+    margin:20px auto 0;
+    width: 650px; 
+    align-content:center;
+    }
+
+    .produce-h2 { 
+        width: 38%; 
+        color: #FDB751;  
+         font-family: Roboto;	
+         font-size: 30px;	
+         line-height: 35px;
+         margin-left:29%;
+         display:block; 
+      
+    }
+
+    .market-p { 
+      width: 38%; 
+      color: white; 
+       font-family: Roboto;	
+       font-size: 20px;	
+       line-height: 35px;
+       margin-left:29%;
+       display:block; 
+    }
+
+    .clothing-h2 {
+      width: 38%; 
+        color: #FDB751;  
+         font-family: Roboto;	
+         font-size: 30px;	
+         line-height: 35px;
+         margin-left:49%;
+         display:flex; 
+         margin-top: -25%;
+
+    }
+
+    .clothing-p {
+      width: 38%;
+      color: white;
+      font-family: Roboto;
+      font-size: 20px;
+      line-height: 35px;
+      margin-left: 49%;
+      margin-top: 0%;
+      display: inline-flex;
+    }
+
+    
+    .household-h2 {
+      width: 38%;
+      color: #FDB751;
+      font-family: Roboto;
+      font-size: 30px;
+      line-height: 35px;
+      margin-left: 67%;
+      /* display: inline; */
+      margin-top: -17%;
+
+    }
+
+    .household-p {
+      width: 38%;
+      color: white;
+      font-family: Roboto;
+      font-size: 20px;
+      line-height: 35px;
+      margin-left: 67%;
+      margin-top: 2%;
+
+    }
+
+    .market-h1 {
+      color: #FDB751; 
+      font-size: 78px; 
+      font-family: Merriweather; 
+      margin-left: 36%;  
+    }

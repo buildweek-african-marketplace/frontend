@@ -15,32 +15,33 @@ if(props.isRegistered === true){
 }else{
 return(
     <div>
-        <form onSubmit={props.submitRegistration}>
-            <label>
+        <h1 className = "signlabel">Register</h1>
+        <form className = "login" onSubmit={props.submitRegistration}>
+            <label className = "reglabel">
                 Username
                 <br/>
-                <input type="text" name="username" value={props.registration.username} onChange={props.changeHandler}/>
+                <input className = "box" type="text" name="username" value={props.registration.username} onChange={props.changeHandler}/>
             </label>
 
             <br/>  
-            <label>
+            <label className = "reglabel">
                 Password
                 <br/>
-                <input type="password" name="password" value={props.registration.password} onChange={props.changeHandler} />
+                <input className = "box" type="password" name="password" value={props.registration.password} onChange={props.changeHandler} />
             </label>
         
             <br/>   
-            <label>
+            <label className = "reglabel">
                 Department
                 <br/>
-                <input type="text" name="department" value={props.registration.department} onChange={props.changeHandler} />
+                <input className = "box" type="text" name="department" value={props.registration.department} onChange={props.changeHandler} />
             </label>
 
             <br/>   
-            <label>
-                Submit
+            <label className = "reglabel">
+                
                 <br/>
-                <input type="Submit" />
+                <input className = "submit" type="Submit" />
             </label>
         </form>   
     </div>    
