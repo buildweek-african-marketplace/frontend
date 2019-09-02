@@ -34,7 +34,7 @@ return(
             <label className = "reglabel">
                 Department
                 <br/>
-                <input className = "box" type="text" name="department" value={props.registration.department} onChange={props.changeHandler} />
+                <input className = "box" type="text" name="department" value={props.registration.department} onChange={props.changeHandler} placeholder ="buyer or seller" />
             </label>
 
             <br/>   
