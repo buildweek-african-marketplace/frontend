@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import { Redirect } from "react-router-dom";
+import { Redirect, Link, Route } from "react-router-dom";
 import axios from "axios";
+
 
 
 const Login = (props) => {
@@ -45,24 +46,27 @@ const submitLogin = (e) => {
     }else{
     return(
         <div>
-            <form className="login" onSubmit={submitLogin}>
-                <label>
+            <h1 className = "signlabel">Sign In</h1>
+            <form className="signlogin" onSubmit={submitLogin}>
+                <label className = "reglabel">
                     Username
                     <br/>
                     <input className="box" type="text" name="username" value={login.username} onChange={changeHandler} />
                 </label>
                 <br/>  
-                <label>
+                <label className = "reglabel">
                     Password
                     <br/>
                     <input className="box" type="password" name="password" value={login.password} onChange={changeHandler} />
                 </label>
                 <br/>
-                <label>
-                    Submit
+                <Link to="/welcome">
+                <label className = "reglabel">
+                   
                     <br/>
                     <input className="submit" type="submit" />
-                </label>    
+                </label>   
+                </Link> 
             </form>    
         </div>    
      )

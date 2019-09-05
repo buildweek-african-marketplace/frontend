@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
-import Registration from "./Registration";
-import RegLogin from "./RegLogin";
+
 
 export default function HomePage() {
   return (
@@ -12,7 +11,7 @@ export default function HomePage() {
         <p className = "homepage-p">Empowering cross-border traders through knowledge, information and community. 
 </p>
 
-      <Link to="/Login">
+      <Link to="/reglog">
         <button className ="button">Sign In</button></Link>
             
       <Link to="/Register">
